@@ -1,7 +1,6 @@
 package services
 
-import org.mockito.Mockito.{verify, when}
-import org.scalamock.matchers.Matchers
+import org.mockito.Mockito.when
 import utils.MockitoSugarUnitTests
 
 class MockitoSugarTest extends MockitoSugarUnitTests {
