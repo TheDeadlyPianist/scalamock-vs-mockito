@@ -2,7 +2,7 @@ package services
 
 import utils.ScalaMockUnitTests
 
-class ClassWithFunctionsSpecSM extends ScalaMockUnitTests{
+class ScalaMockTest extends ScalaMockUnitTests{
   val customerService: CustomerDetailsService = mock[CustomerDetailsService]
   val customerController: CustomerDataController = new CustomerDataController(customerService)
 
@@ -16,7 +16,7 @@ class ClassWithFunctionsSpecSM extends ScalaMockUnitTests{
 
       val result = customerController.getCustomerName("1234-5678-9000")
 
-      result shouldEqual "Duane"
+      result shouldBe "Duane"
     }
 
   }

@@ -1,3 +1,5 @@
 package utils
 
-trait MockitoSugarUnitTests extends UnitTests
+import org.scalatestplus.mockito.MockitoSugar
+
+trait MockitoSugarUnitTests extends UnitTests with MockitoSugar
